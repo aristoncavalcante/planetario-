@@ -101,7 +101,7 @@ const asteroids = [];
 // Função para obter dados de asteroides da API da NASA
 async function fetchAsteroids() {
   const today = new Date().toISOString().split('T')[0]; // Data de hoje no formato YYYY-MM-DD
-  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${today}&api_key=${NASA_API_KEY}`;
+  const url = `/api/neo/rest/v1/feed?start_date=${today}&api_key=${NASA_API_KEY}`;
 
   try {
     const response = await fetch(url);
