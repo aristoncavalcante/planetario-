@@ -1,4 +1,5 @@
 {
+  "homepage": "https://aristoncavalcante.github.io/aristoncavalcante/planetario-interativo",
   "name": "threejs-vite-project",
   "version": "1.0.0",
   "description": "",
@@ -6,12 +7,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "http-proxy-middleware": "^3.0.3",
     "three": "^0.152.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^4.0.0"
   }
 }
